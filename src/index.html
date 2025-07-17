@@ -15,12 +15,16 @@
   <body>
     <!-- header section -->
     <header>
-      <nav>
+      <nav
+        class="max-w-[1440px] container mx-auto px-4 py-4 flex items-center justify-between"
+      >
         <!-- logo -->
-        <div class="text-2xl font-bold flex items-center gap-2">
-          <img src="./images/logo.png" alt="Logo" class="h-8" />
-          <span class="text-primary">DeepVpn</span>
-        </div>
+        <a href="/">
+          <div class="text-2xl font-bold flex items-center gap-2">
+            <img src="./images/logo.png" alt="Logo" class="h-8" />
+            <span class="text-primary">DeepVpn</span>
+          </div>
+        </a>
         <!-- logo -->
 
         <!-- Menu Items -->
@@ -54,8 +58,60 @@
           </li>
         </ul>
         <!-- Menu Items -->
+
+        <!-- Auth Button -->
+        <div class="space-x-4">
+          <button
+            class="text-gray-600 hover:text-primary hidden sm:inline-flex"
+          >
+            Sign In
+          </button>
+
+          <button
+            class="bg-primary text-white hover:bg-red-600 rounded-full px-4 py-2 cursor-pointer"
+          >
+            Sign Up
+          </button>
+        </div>
+        <!-- Auth Button -->
       </nav>
     </header>
     <!-- header section -->
+
+    <!-- Hero Section -->
+    <section
+      class="max-w-[1440px] container mx-auto px-4 py-28 flex flex-col md:flex-row items-center gap-12"
+    >
+      <!-- Left Content -->
+      <div class="md:w-1/2 mb-8 md:mb-0 space-y-8">
+        <h1
+          class="lg:text-6xl md:text-5xl text-4xl font-bold text-heading-text leading-tight"
+        >
+          Want anything to be <br class="lg:block hidden" />
+          easy with Deep VPN.
+        </h1>
+
+        <p
+          class="text-primary-text text-xl text-justify leading-relaxed max-w-xl"
+        >
+          Provide a network for all your needs with ease and fun using Deep VPN
+          discover interesting features from us.
+        </p>
+
+        <button
+          class="px-12 py-4 text-lg font-medium bg-primary text-white rounded-lg shadow-lg hover:bg-red-600 hover:shadow-xl transition duration-300 cursor-pointer"
+        >
+          Get Started
+        </button>
+      </div>
+      <!-- Left Content -->
+
+      <!-- Right Content -->
+      <div class="md:w-1/2">
+        <img src="./images/banner.png" alt="Hero Image" class="w-full" />
+      </div>
+      <!-- Right Content -->
+    </section>
+    <!-- Hero Section -->
   </body>
 </html>
