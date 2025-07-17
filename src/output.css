@@ -273,11 +273,21 @@
   .gap-2 {
     gap: calc(var(--spacing) * 2);
   }
+  .gap-3 {
+    gap: calc(var(--spacing) * 3);
+  }
   .gap-6 {
     gap: calc(var(--spacing) * 6);
   }
   .gap-12 {
     gap: calc(var(--spacing) * 12);
+  }
+  .space-y-4 {
+    :where(& > :not(:last-child)) {
+      --tw-space-y-reverse: 0;
+      margin-block-start: calc(calc(var(--spacing) * 4) * var(--tw-space-y-reverse));
+      margin-block-end: calc(calc(var(--spacing) * 4) * calc(1 - var(--tw-space-y-reverse)));
+    }
   }
   .space-y-8 {
     :where(& > :not(:last-child)) {
@@ -482,6 +492,11 @@
   .md\:w-1\/2 {
     @media (width >= 48rem) {
       width: calc(1/2 * 100%);
+    }
+  }
+  .md\:w-2\/3 {
+    @media (width >= 48rem) {
+      width: calc(2/3 * 100%);
     }
   }
   .md\:flex-row {
