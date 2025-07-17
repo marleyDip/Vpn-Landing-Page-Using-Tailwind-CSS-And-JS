@@ -10,3 +10,9 @@
     --color-heading-text: #0B132A;
     --font-primary: "Rubik", serif;
 }
+
+@layer {
+    .section-container {
+        @apply max-w-[1440px] container mx-auto px-4 py-18;
+    }
+}
