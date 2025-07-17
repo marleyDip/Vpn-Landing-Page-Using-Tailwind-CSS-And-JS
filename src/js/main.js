@@ -123,3 +123,7 @@ function generateTestimonials() {
 
 // Call the function when the document is loaded
 document.addEventListener("DOMContentLoaded", generateTestimonials);
+
+/* dynamic year */
+document.getElementById("year").textContent = new Date().getFullYear();
+/* dynamic year */
