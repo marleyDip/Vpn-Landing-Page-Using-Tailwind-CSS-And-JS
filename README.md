@@ -1,6 +1,6 @@
 ## 🚀 *Project Demo Link*
 
-### 🔗 [Deep VPN Landing Page Using Tailwind CSS v3 & JS DOM](https://vpn-tailwind-css.vercel.app/)
+### 🔗 [Deep VPN Landing Page Using Tailwind CSS v4 & JS DOM](https://vpn-tailwind-css.vercel.app/)
 
 ## 📸 *Project Preview*
 
