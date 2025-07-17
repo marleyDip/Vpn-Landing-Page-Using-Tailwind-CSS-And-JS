@@ -14,6 +14,9 @@
       href="https://cdn.jsdelivr.net/npm/swiper@11/swiper-bundle.min.css"
     />
 
+    <!-- AOS Animation CSS -->
+    <link rel="stylesheet" href="https://unpkg.com/aos@next/dist/aos.css" />
+
     <!-- main css -->
     <link rel="stylesheet" href="./output.css" />
   </head>
@@ -90,7 +93,7 @@
       class="max-w-[1440px] container mx-auto px-4 py-28 flex flex-col-reverse md:flex-row items-center gap-12"
     >
       <!-- Left Content -->
-      <div class="md:w-1/2 mb-8 md:mb-0 space-y-8">
+      <div class="md:w-1/2 mb-8 md:mb-0 space-y-8" data-aos="fade-right">
         <h1
           class="lg:text-6xl md:text-5xl text-4xl font-bold text-heading-text leading-tight"
         >
@@ -114,7 +117,7 @@
       <!-- Left Content -->
 
       <!-- Right Content -->
-      <div class="md:w-1/2">
+      <div class="md:w-1/2" data-aos="fade-left">
         <img src="./images/banner.png" alt="Hero Image" class="w-full" />
       </div>
       <!-- Right Content -->
@@ -123,7 +126,7 @@
 
     <!-- Statistics Section -->
     <section class="section-container">
-      <div class="bg-white rounded-xl shadow-lg p-8">
+      <div class="bg-white rounded-xl shadow-lg p-8" data-aos="fade-up">
         <div
           class="flex flex-col lg:flex-row items-center justify-around divide-y lg:divide-y-0 lg:divide-x"
         >
@@ -199,13 +202,13 @@
         class="flex flex-col md:flex-row items-center justify-between gap-12"
       >
         <!-- Left Content -->
-        <div class="md:w-1/2">
+        <div class="md:w-1/2" data-aos="fade-left">
           <img src="./images/features.png" alt="Feature Image" />
         </div>
         <!-- Left Content -->
 
         <!-- Right Content -->
-        <div class="md:w-1/2 space-y-8">
+        <div class="md:w-1/2 space-y-8" data-aos="fade-right">
           <!-- info -->
           <h2 class="text-heading-text text-4xl font-bold leading-tight">
             We Provide Many <br />
@@ -280,6 +283,7 @@
           <!-- free plan -->
           <div
             class="bg-white p-8 rounded-2xl border-2 border-gray-200 flex flex-col items-center hover:border-red-500 transition duration-300 transform ease-out hover:-translate-y-1"
+            data-aos="fade-right"
           >
             <img src="./images/box.png" alt="Gift Box" class="w-32 mb-8" />
 
@@ -346,6 +350,7 @@
           <!-- Standard Plan -->
           <div
             class="bg-white p-8 rounded-2xl border-2 border-gray-200 flex flex-col items-center hover:border-red-500 transition duration-300 transform ease-out hover:-translate-y-1"
+            data-aos="fade-up"
           >
             <img src="./images/box.png" alt="Gift Box" class="w-32 mb-8" />
 
@@ -424,6 +429,7 @@
           <!-- Premium Plan -->
           <div
             class="bg-white p-8 rounded-2xl border-2 border-gray-200 flex flex-col items-center hover:border-red-500 transition duration-300 transform ease-out hover:-translate-y-1"
+            data-aos="fade-left"
           >
             <img src="./images/box.png" alt="Gift Box" class="w-32 mb-8" />
 
@@ -517,7 +523,7 @@
     <!-- Global Network Section -->
     <section class="section-container">
       <!-- header -->
-      <div class="text-center mb-16">
+      <div class="text-center mb-16" data-aos="fade-up">
         <h2 class="text-4xl font-bold text-heading-text mb-4 md:w-1/4 mx-auto">
           Huge Global Network of Fast VPN
         </h2>
@@ -530,13 +536,16 @@
       <!-- header -->
 
       <!-- global map -->
-      <div class="mb-16">
+      <div class="mb-16" data-aos="fade-right">
         <img src="./images/map.png" alt="Global Map" />
       </div>
       <!-- global map -->
 
       <!-- sponsored logos -->
-      <div class="flex flex-wrap justify-center gap-12 opacity-75">
+      <div
+        class="flex flex-wrap justify-center gap-12 opacity-75"
+        data-aos="fade-left"
+      >
         <img
           src="./images/netflix.png"
           alt="Sponsored Logos"
@@ -574,7 +583,7 @@
     <!-- Testimonials Section -->
     <section class="section-container" id="testimonials">
       <!-- header -->
-      <div class="text-center mb-16">
+      <div class="text-center mb-16" data-aos="fade-right">
         <h2 class="text-4xl font-bold text-heading-text mb-4 md:w-1/3 mx-auto">
           Trusted by Thousands of Happy Customer
         </h2>
@@ -587,7 +596,7 @@
       <!-- header -->
 
       <!-- Slider main container -->
-      <div class="swiper testimonialSwiper">
+      <div class="swiper testimonialSwiper" data-aos="fade-left">
         <!-- Additional required wrapper -->
         <div class="swiper-wrapper">
           <!-- add Slides dynamically -->
@@ -636,9 +645,10 @@
     <!-- Testimonials Section -->
 
     <!-- Subscribe Section -->
-    <section class="section-container" id="subscribe"
+    <section class="section-container" id="subscribe">
       <div
         class="bg-white rounded-xl shadow-lg p-8 md:p-12 lg:p-16 hover:shadow-xl transition-all duration-500"
+        data-aos="fade-up"
       >
         <div
           class="flex flex-col md:flex-row justify-between items-center gap-8"
@@ -674,12 +684,12 @@
 
     <!-- Footer section -->
     <footer class="bg-[#F8F8F8]">
-      <div class="section-container">
+      <div class="section-container" data-aos="fade-up">
         <div class="grid grid-cols-1 md:grid-cols-2 lg:grid-cols-4 gap-12">
           <!-- Brand Column -->
           <div class="lg:col-span-1">
             <!-- logo -->
-            <div class="flex items-center gap-2 mb-5">
+            <div class="flex items-center gap-2 mb-5" data-aos="fade-left">
               <img src="./images/logo.png" alt="logo" class="h-8" />
 
               <span class="text-xl font-bold">Deep VPN</span>
@@ -687,14 +697,14 @@
             <!-- logo -->
 
             <!-- info -->
-            <p class="text-primary-text mb-8">
+            <p class="text-primary-text mb-8" data-aos="fade-up">
               Deep VPN is a private virtual network that has unique features and
               has high security.
             </p>
             <!-- info -->
 
             <!-- social link -->
-            <div class="flex gap-4">
+            <div class="flex gap-4" data-aos="fade-right">
               <div class="flex gap-4">
                 <a
                   href=""
@@ -737,7 +747,7 @@
             <!-- social link -->
 
             <!-- Copyright -->
-            <p class="text-primary-text mt-8 text-lg">
+            <p class="text-primary-text mt-8 text-lg" data-aos="fade-up">
               &copy; <span id="year"></span>
               <a
                 href="https://marleydip.netlify.app/"
@@ -754,9 +764,11 @@
 
           <!-- Product Column -->
           <div>
-            <h3 class="font-medium text-xl mb-6">Product</h3>
+            <h3 class="font-medium text-xl mb-6" data-aos="fade-right">
+              Product
+            </h3>
 
-            <ul class="space-y-4 text-primary-text text-lg">
+            <ul class="space-y-4 text-primary-text text-lg" data-aos="fade-up">
               <li>
                 <a href="#" class="hover:text-primary">Download</a>
               </li>
@@ -786,9 +798,11 @@
 
           <!-- Engage Column -->
           <div>
-            <h3 class="font-medium text-xl mb-6">Engage</h3>
+            <h3 class="font-medium text-xl mb-6" data-aos="fade-left">
+              Engage
+            </h3>
 
-            <ul class="space-y-4 text-primary-text text-lg">
+            <ul class="space-y-4 text-primary-text text-lg" data-aos="fade-up">
               <li>
                 <a href="#" class="hover:text-primary">DeepVPN ?</a>
               </li>
@@ -818,9 +832,14 @@
 
           <!--  Earn Money -->
           <div>
-            <h3 class="font-medium text-xl mb-6">Earn Money</h3>
+            <h3 class="font-medium text-xl mb-6" data-aos="fade-left">
+              Earn Money
+            </h3>
 
-            <ul class="space-y-4 text-primary-text text-lg">
+            <ul
+              class="space-y-4 text-primary-text text-lg"
+              data-aos="fade-right"
+            >
               <li>
                 <a href="#" class="hover:text-primary">Affiliate</a>
               </li>
@@ -841,5 +860,14 @@
 
     <!-- Main js -->
     <script src="./js/main.js"></script>
+
+    <!-- AOS Animation js -->
+    <script src="https://unpkg.com/aos@next/dist/aos.js"></script>
+    <script>
+      AOS.init({
+        duration: 1000,
+        once: true,
+      });
+    </script>
   </body>
 </html>

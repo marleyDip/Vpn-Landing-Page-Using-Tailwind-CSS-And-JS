@@ -5,7 +5,7 @@ const testimonials = [
     location: "Warsaw, Poland",
     rating: 4.5,
     comment:
-      "Wow... I am very happy to use this VPN, it turned out to be more than my expectations and so far there have been no problems. Deep VPN always the best",
+      "Wow... I am very happy to use this VPN, it turned out to be more than my expectations and so far there have been no problems.",
     image: "./images/user1.png",
   },
   {
@@ -13,7 +13,7 @@ const testimonials = [
     location: "Shanxi, China",
     rating: 4.5,
     comment:
-      "I like it because I like to travel far and still can connect with high speed. I like it because I like to travel far.",
+      "I like it because I like to travel far and still can connect with high speed. Deep VPN always the best.",
     image: "./images/user2.png",
   },
   {
