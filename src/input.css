@@ -16,3 +16,22 @@
         @apply max-w-[1440px] container mx-auto px-4 py-18;
     }
 }
+
+.swiper-pagination-bullet {
+    width: 15px;
+    height: 15px;
+    background: #DDE0E4;
+    opacity: 1;
+    margin: 0 5px !important;
+}
+
+.swiper-pagination-bullet-active {
+    background: var(--color-primary);
+    opacity: 1;
+    transform: scale(1.2);
+    transition: transform 0.7s;
+}
+
+.swiper-button-prev:after, .swiper-rtl, .swiper-button-next:after, .swiper-button-next:after, .swiper-rtl, .swiper-button-prev:after {
+    content: "" !important;
+}
